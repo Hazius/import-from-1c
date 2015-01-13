@@ -19,9 +19,6 @@ gem 'jquery-rails'
 gem 'jquery-ui-rails'
 gem 'jquery-datatables-rails'
 
-# БД:
-# gem 'pg'
-gem 'sqlite3'
 
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
@@ -42,6 +39,7 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 
 group :development do
   gem 'spring'
+  gem 'sqlite3'
 end
 
 group :test do
@@ -50,6 +48,7 @@ end
 
 group :production do
   gem 'rails_12factor'
+  gem 'pg'
 end
 
 
