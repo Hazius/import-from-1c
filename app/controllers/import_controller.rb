@@ -12,6 +12,7 @@ class ImportController < ApplicationController
           import.attach_xml!(doc.to_xml, params[:filename])
         end
         'success'
+      end
     render text: text
   end
 end
