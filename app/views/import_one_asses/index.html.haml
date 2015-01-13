@@ -1,17 +1,16 @@
 %h1 Последний импорт из 1С
 
 %table.table.table-stripped.table-bordered
-  %thead
-    %tr
-      %th
-      %th
-      %th
-      %th
+  / %thead
+  /   %tr
+  /     %th
+  /     %th
+  /     %th
+  /     %th
 
   %tbody
     - @import_one_asses.each do |import_one_ass|
       %tr
         %td= link_to 'Import.xml', "#{import_one_ass_path(import_one_ass)}?i=true", class: 'btn btn-default'
         %td= link_to 'Offers.xml', "#{import_one_ass_path(import_one_ass)}?o=true", class: 'btn btn-default'
-        %td= link_to 'Offers.xml', import_one_ass, class: 'btn btn-default'
         %td= link_to 'Удалить', import_one_ass, :method => :delete, :data => { :confirm => 'Are you sure?' }, class: 'btn btn-danger'
