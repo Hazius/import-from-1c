@@ -1,0 +1,23 @@
+%h1 Listing import_one_asses
+
+%table
+  %thead
+    %tr
+      %th Import xml
+      %th Offers xml
+      %th
+      %th
+      %th
+      
+  %tbody
+    - @import_one_asses.each do |import_one_ass|
+      %tr
+        %td= import_one_ass.import_xml
+        %td= import_one_ass.offers_xml
+        %td= link_to 'Show', import_one_ass
+        %td= link_to 'Edit', edit_import_one_ass_path(import_one_ass)
+        %td= link_to 'Destroy', import_one_ass, :method => :delete, :data => { :confirm => 'Are you sure?' }
+
+%br
+
+= link_to 'New Import one ass', new_import_one_ass_path

@@ -1,0 +1,2 @@
+module ImportOneAssesHelper
+end

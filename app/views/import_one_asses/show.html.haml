@@ -1,0 +1,12 @@
+%p#notice= notice
+
+%p
+  %b Import xml:
+  = @import_one_ass.import_xml
+%p
+  %b Offers xml:
+  = @import_one_ass.offers_xml
+
+= link_to 'Edit', edit_import_one_ass_path(@import_one_ass)
+\|
+= link_to 'Back', import_one_asses_path

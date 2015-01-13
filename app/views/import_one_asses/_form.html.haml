@@ -1,0 +1,9 @@
+= simple_form_for(@import_one_ass) do |f|
+  = f.error_notification
+
+  .form-inputs
+    = f.input :import_xml
+    = f.input :offers_xml
+
+  .form-actions
+    = f.button :submit
