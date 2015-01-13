@@ -2,6 +2,7 @@ Rails.application.routes.draw do
   resources :import_one_asses
 
   post 'import/one_c' => 'import#one_c'
+  get 'import/one_c' => 'import#one_c'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
