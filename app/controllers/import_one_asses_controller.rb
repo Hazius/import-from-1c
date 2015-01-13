@@ -10,6 +10,7 @@ class ImportOneAssesController < ApplicationController
   # GET /import_one_asses/1
   # GET /import_one_asses/1.json
   def show
+
   end
 
   # GET /import_one_asses/new
