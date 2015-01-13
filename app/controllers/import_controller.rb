@@ -9,7 +9,7 @@ class ImportController < ApplicationController
         if ['import.xml', 'offers.xml'].include? params[:filename]
           xml = request.body.read
           import = ImportOneAss.first_or_create
-          import.attach_xml!(doc.to_xml, params[:filename])
+          import.attach_xml!(xml, params[:filename])
         end
         'success'
       end
