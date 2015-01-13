@@ -12,10 +12,8 @@
   %tbody
     - @import_one_asses.each do |import_one_ass|
       %tr
-        %td= import_one_ass.import_xml
-        %td= import_one_ass.offers_xml
-        %td= link_to 'Show', import_one_ass
-        %td= link_to 'Edit', edit_import_one_ass_path(import_one_ass)
+        %td= link_to 'Import xml', "#{import_one_ass}?i=true"
+        %td= link_to 'Offers xml', "#{import_one_ass}?o=true"
         %td= link_to 'Destroy', import_one_ass, :method => :delete, :data => { :confirm => 'Are you sure?' }
 
 %br

@@ -10,7 +10,11 @@ class ImportOneAssesController < ApplicationController
   # GET /import_one_asses/1
   # GET /import_one_asses/1.json
   def show
-
+    if params[:i]
+      render xml: @import_one_ass.import_xml
+    elsif params[:o]
+      render xml: @import_one_ass.offers_xml
+    end
   end
 
   # GET /import_one_asses/new
