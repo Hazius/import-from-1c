@@ -1,7 +1,6 @@
 class ImportController < ApplicationController
 
-  skip_before_action :verify_authenticity_token, only: [:import]
-
+  skip_before_action :verify_authenticity_token
   def one_c
     text = case params[:mode]
       when 'checkauth'
